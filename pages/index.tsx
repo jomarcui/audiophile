@@ -1,6 +1,6 @@
 import type { NextPage } from 'next';
-import Layout from '../components/Layout';
+import { HeroLayout } from '../components/Layout';
 
-const Home: NextPage = () => <Layout>Home</Layout>;
+const Home: NextPage = () => <HeroLayout>Home</HeroLayout>;
 
 export default Home;

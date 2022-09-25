@@ -2,13 +2,14 @@ import { ReactNode } from 'react';
 import Button from './Button';
 
 type HeaderProps = {
+  hero?: ReactNode;
   nav?: ReactNode;
 };
 
-const Header = ({ nav }: HeaderProps) => {
+const Header = ({ hero, nav }: HeaderProps) => {
   return (
     <div className="bg-black">
-      <header className="flex items-center justify-between max-w-screen-md mx-auto">
+      <header className="border-b border-gray-800 flex items-center justify-between max-w-screen-md mx-auto">
         <div>
           <h1 className="font-black text-xl text-gray-100">audiophile</h1>
         </div>
@@ -32,6 +33,7 @@ const Header = ({ nav }: HeaderProps) => {
           </Button>
         </div>
       </header>
+      {hero}
     </div>
   );
 };
