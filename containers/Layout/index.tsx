@@ -1,15 +1,17 @@
 import { ReactNode } from 'react';
-import Header from '../Header';
 import { Container, Main } from './styles';
 
 interface LayoutProps {
-  children: ReactNode;
+  children?: ReactNode;
+  footer?: ReactNode;
+  header?: ReactNode;
 }
 
-const Layout = ({ children }: LayoutProps) => (
+const Layout = ({ children, footer, header }: LayoutProps) => (
   <Container>
-    <Header>Header</Header>
+    {header}
     <Main>{children}</Main>
+    {footer}
   </Container>
 );
 
