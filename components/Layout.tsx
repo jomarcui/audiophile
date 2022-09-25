@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import { ReactNode } from 'react';
 import { navItems } from '../config';
+import PrimaryButton from './Button';
 import Header from './Header';
 import Nav from './Nav';
 
@@ -35,6 +36,9 @@ export const HeroLayout = ({ children }: LayoutProps) => {
             <br />
             to a new level of individuality.
           </p>
+        </div>
+        <div className="my-2">
+          <PrimaryButton>See Product</PrimaryButton>
         </div>
       </div>
     </div>
