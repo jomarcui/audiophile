@@ -6,7 +6,7 @@ type NavProps = {
 };
 
 const Nav = ({ items = [] }: NavProps) => (
-  <nav className="flex py-5">
+  <nav>
     <ul className="flex mx-auto">
       {items.map(({ id, label, url }) => (
         <li key={id}>
