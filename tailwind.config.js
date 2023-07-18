@@ -7,8 +7,8 @@ module.exports = {
   theme: {
     extend: {
       animation: {
-        'hero-image-intro': 'hero-image-intro 1.5s ease-in-out',
-        'hero-text-intro': 'hero-text-intro 1.5s ease-in-out',
+        'hero-image-intro': 'hero-image-intro 1s ease-in-out',
+        'hero-text-intro': 'hero-text-intro 1s ease-in-out',
       },
       fontFamily: {
         body: ['Poppins', 'sans-serif'],

@@ -1,5 +1,4 @@
 import { ReactNode } from 'react';
-import Button from './Button';
 
 type HeaderProps = {
   hero?: ReactNode;
@@ -9,12 +8,12 @@ type HeaderProps = {
 const Header = ({ hero, nav }: HeaderProps) => {
   return (
     <div className="bg-black">
-      <header className="border-b border-gray-800 flex items-center justify-between max-w-screen-md mx-auto">
-        <div>
-          <h1 className="font-black text-xl text-gray-100">audiophile</h1>
+      <header className="md:container border-b border-gray-800 flex items-center justify-between md:mx-auto py-7">
+        <div className="items-center flex flex-1">
+          <h1 className="font-bold text-2xl text-white">audiophile</h1>
         </div>
-        <div className="flex py-5">{nav}</div>
-        <div className="flex">
+        <div className="flex flex-1">{nav}</div>
+        <div className="flex flex-1 justify-end">
           <button className="group" name="cart-button">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -22,7 +21,7 @@ const Header = ({ hero, nav }: HeaderProps) => {
               viewBox="0 0 24 24"
               strokeWidth="1.5"
               stroke="currentColor"
-              className="group-hover:h-6 group-hover:w-6 h-5 text-gray-100 transition-all w-5"
+              className="group-hover:text-[#d87d4a] h-6 text-white transition-all w-6"
             >
               <path
                 strokeLinecap="round"
